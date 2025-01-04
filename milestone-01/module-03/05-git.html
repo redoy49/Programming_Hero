@@ -1,0 +1,14 @@
+Using GitHub Tokens:
+1. Generate Token: GitHub Settings → Developer Settings → Personal Access Tokens → Generate.
+2. Set Permissions: Choose scopes (e.g., repo, gist).
+3. Copy Token: Save it securely (it won’t show again).
+4. Use with Git: Use the token as your password.
+5. Store Locally: git config --global credential.helper store.
+6. API Use: Add header: Authorization: token YOUR_TOKEN.
+7. Env Variable: export GITHUB_TOKEN=YOUR_TOKEN.
+
+Get Live Website Link (GitHub Pages):
+1. Setup Repo: Make repo public or allow Pages.
+2. Enable Pages: Settings → Pages → Select branch and folder.
+3. Save: GitHub gives a live link like https://<username>.github.io/<repo>/.
+4. Custom Domain: Add in Pages settings (optional).

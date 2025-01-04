@@ -1,0 +1,41 @@
+10 Common Git and GitHub Mistakes and Issues for Beginners
+
+1. Committing Sensitive Data  
+  - Accidentally committing API keys or credentials into the repository.  
+  - Solution: Use .gitignore and tools like git filter-repo to remove sensitive data.
+
+2. Not Using .gitignore  
+  - Forgetting to exclude unnecessary files like logs, compiled code, or environment files.  
+  - Solution: Add a .gitignore file to your repository.
+
+3. Forgetting to Commit Changes  
+  - Making changes but forgetting to run git commit.  
+  - Solution: Frequently use git status to check the state of the working directory.
+
+4. Not Setting Up User Info  
+  - Missing git config setup results in anonymous commits.  
+  - Solution: Run git config--global user.name and git config--global user.email.
+
+5. Using git pull Without Understanding  
+  - Overwriting local changes when pulling from the remote.  
+  - Solution: Use git fetch and git merge to review changes first.
+
+6. Working on the Wrong Branch  
+  - Making changes on main instead of a feature branch.  
+  - Solution: Always create a branch (git checkout-b branch-name) for new work.
+
+7. Merge Conflicts  
+  - Difficulty resolving conflicts when multiple people edit the same file.  
+  - Solution: Understand the conflict markers and test changes after resolution.
+
+8. Not Pushing After Committing  
+  - Assuming commits are automatically uploaded to GitHub.  
+  - Solution: Use git push to sync changes with the remote repository.
+
+9. Overwriting History with git push--force  
+  - Using--force without understanding, leading to loss of team changes.  
+  - Solution: Use--force-with-lease to avoid overwriting others' work.
+
+10. Confusion with SSH Keys  
+   - Struggling to configure SSH for GitHub, resulting in authentication failures.  
+   - Solution: Follow GitHub's guide to set up SSH keys and test with ssh-T git@github.com.
